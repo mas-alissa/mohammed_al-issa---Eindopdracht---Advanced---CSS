@@ -1,0 +1,25 @@
+// Deel - 1
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+    .top-section {
+      width: 30%;
+      background-color: $white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding-bottom: 80px;
+      
+      p {
+        line-height: 1.8;
+        font-size: 20px;
+        padding: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+       
+     
+      }
+      
+    }
+
+  }

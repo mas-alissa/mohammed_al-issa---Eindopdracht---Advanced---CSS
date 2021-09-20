@@ -1,0 +1,15 @@
+// Deel - 1
+.main {
+    position: relative;
+  
+    img {
+      width: 150px;
+      height: 150px;
+      border: 6px solid $imgborder;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }

@@ -1,0 +1,925 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.header .top-section {
+  width: 30%;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 80px;
+}
+.header .top-section p {
+  line-height: 1.8;
+  font-size: 20px;
+  padding: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main {
+  position: relative;
+}
+.main img {
+  width: 150px;
+  height: 150px;
+  border: 6px solid lightgray;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  background-color: #686de0;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding: 100px 30px 80px 30px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.footer div h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.footer div a {
+  text-decoration: none;
+}
+.footer div a p {
+  color: #c3cfe2;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container-divs {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". one ." ". two ." ". three ." ". four ." ". five ." ". six .";
+    row-gap: 30px;
+    justify-items: center;
+  }
+  .container-divs .one {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: one;
+  }
+  .container-divs .one img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .one .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .one .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .one:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .one:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .two {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: two;
+  }
+  .container-divs .two img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .two .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .two .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .two:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .two:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .three {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: three;
+  }
+  .container-divs .three img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .three .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .three .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .three:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .three:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .four {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: four;
+  }
+  .container-divs .four img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .four .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .four .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .four:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .four:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .five {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: five;
+  }
+  .container-divs .five img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .five .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .five .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .five:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .five:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .six {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: six;
+  }
+  .container-divs .six img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .six .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .six .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .six:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .six:hover img {
+    transform: scale(1.5, 1.5);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-divs {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". one two ." ". three four ." ". five six .";
+    row-gap: 30px;
+    justify-items: center;
+  }
+  .container-divs .one {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: one;
+  }
+  .container-divs .one img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .one .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .one .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .one:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .one:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .two {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: two;
+  }
+  .container-divs .two img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .two .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .two .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .two:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .two:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .three {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: three;
+  }
+  .container-divs .three img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .three .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .three .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .three:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .three:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .four {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: four;
+  }
+  .container-divs .four img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .four .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .four .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .four:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .four:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .five {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: five;
+  }
+  .container-divs .five img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .five .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .five .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .five:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .five:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .six {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: six;
+  }
+  .container-divs .six img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .six .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .six .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .six:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .six:hover img {
+    transform: scale(1.5, 1.5);
+  }
+}
+@media (min-width: 1024px) {
+  .container-divs {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". one two three ." ". four five six .";
+    row-gap: 30px;
+    justify-items: center;
+  }
+  .container-divs .one {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: one;
+  }
+  .container-divs .one img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .one .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .one .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .one:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .one:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .two {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: two;
+  }
+  .container-divs .two img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .two .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .two .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .two:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .two:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .three {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: three;
+  }
+  .container-divs .three img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .three .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .three .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .three:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .three:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .four {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: four;
+  }
+  .container-divs .four img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .four .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .four .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .four:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .four:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .five {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: five;
+  }
+  .container-divs .five img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .five .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .five .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .five:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .five:hover img {
+    transform: scale(1.5, 1.5);
+  }
+  .container-divs .six {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    grid-area: six;
+  }
+  .container-divs .six img {
+    width: 100%;
+    transition: all 1s;
+  }
+  .container-divs .six .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .container-divs .six .layer .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+  }
+  .container-divs .six:hover .layer {
+    opacity: 1;
+  }
+  .container-divs .six:hover img {
+    transform: scale(1.5, 1.5);
+  }
+}
+.social-media {
+  overflow: hidden;
+}
+
+.blog {
+  background-color: #e17b77;
+  width: 350px;
+  margin-left: auto;
+  padding: 18px;
+  transform: translateX(300px);
+  transition: transform 0.7s;
+}
+.blog a {
+  color: white;
+  font-size: 18px;
+}
+.blog .fa-blog {
+  margin-right: 30px;
+  font-size: 20px;
+}
+.blog:hover {
+  transform: translateX(0);
+}
+.blog::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.twitter {
+  background-color: #00aced;
+  width: 350px;
+  margin-left: auto;
+  padding: 18px;
+  transform: translateX(300px);
+  transition: transform 0.7s;
+}
+.twitter a {
+  color: white;
+  font-size: 18px;
+}
+.twitter .fa-twitter {
+  margin-right: 30px;
+  font-size: 20px;
+}
+.twitter:hover {
+  transform: translateX(0);
+}
+.twitter::before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.linkedin {
+  background-color: #007bb6;
+  width: 350px;
+  margin-left: auto;
+  padding: 18px;
+  transform: translateX(300px);
+  transition: transform 0.7s;
+}
+.linkedin a {
+  color: white;
+  font-size: 18px;
+}
+.linkedin .fa-linkedin-in {
+  margin-right: 30px;
+  font-size: 20px;
+}
+.linkedin:hover {
+  transform: translateX(0);
+}
+.linkedin::before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  width: 350px;
+  margin-left: auto;
+  padding: 18px;
+  transform: translateX(300px);
+  transition: transform 0.7s;
+}
+.facebook a {
+  color: white;
+  font-size: 18px;
+}
+.facebook .fa-facebook-f {
+  margin-right: 30px;
+  font-size: 20px;
+}
+.facebook:hover {
+  transform: translateX(0);
+}
+.facebook::before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.github {
+  background-color: #333;
+  width: 350px;
+  margin-left: auto;
+  padding: 18px;
+  transform: translateX(300px);
+  transition: transform 0.7s;
+}
+.github a {
+  color: white;
+  font-size: 18px;
+}
+.github .fa-github {
+  margin-right: 30px;
+  font-size: 20px;
+}
+.github:hover {
+  transform: translateX(0);
+}
+.github::before {
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.hr {
+  margin: 150px 0;
+}/*# sourceMappingURL=style.css.map */

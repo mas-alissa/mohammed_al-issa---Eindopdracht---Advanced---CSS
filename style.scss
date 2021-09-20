@@ -1,0 +1,30 @@
+@import './scssfolder/variables';
+@import './scssfolder/header';
+@import './scssfolder/main';
+@import './scssfolder/footer';
+@import './scssfolder/portfoliogrid';
+@import './scssfolder/asidemediabar';
+
+@mixin all_select() {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin bodybgcolor (){
+  background-color: $backgroundcolor;
+}
+* {
+  @include all_select()
+}
+body {
+ @include bodybgcolor();
+}
+
+// Deel - 2
+.hr {
+  margin: 150px 0;
+}
+
+
+// Deel - 3

@@ -1,0 +1,662 @@
+// Deel - 2
+
+// mobile size
+@media (min-width: 320px) and (max-width: 767px) {
+    .container-divs {
+        display:grid;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". one ."
+        ". two ."
+        ". three ."
+        ". four ."
+        ". five ."
+        ". six ."
+        ;
+        row-gap: 30px;
+        justify-items: center;
+      .one {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: one;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:$brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .two {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: two;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .three {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: three;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .four {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: four;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .five {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: five;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .six {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: six;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+    }
+    
+    }
+// ipad size 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container-divs {
+        display:grid;
+        grid-template-columns: 30px 1fr 1fr 30px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". one two ."
+        ". three four ."
+        ". five six .";
+        row-gap: 30px;
+        justify-items: center;
+      .one {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: one;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .two {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: two;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .three {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: three;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .four {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: four;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .five {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: five;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+      .six {
+        position: relative;
+        width:300px;
+        overflow: hidden;
+        grid-area: six;
+        img {
+          width: 100%;
+          transition: all 1s;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          opacity: 0;
+          transition: all 1s;
+          .btn{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+              width:100px;
+              height: 35px;
+              border-radius: 10px;
+              cursor: pointer;
+              background-color:brown;
+              color:white;
+          }
+        }
+        &:hover .layer { opacity: 1;}
+        &:hover img { transform: scale(1.5,1.5);}
+      }
+    }
+    
+    }
+// pc size 
+@media (min-width: 1024px) {
+.container-divs {
+    display:grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". one two three ."
+    ". four five six .";
+    row-gap: 30px;
+    justify-items: center;
+  .one {
+    position: relative;
+    width:300px;
+    overflow: hidden;
+    grid-area: one;
+    img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0;
+      transition: all 1s;
+      .btn{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          width:100px;
+          height: 35px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color:brown;
+          color:white;
+      }
+    }
+    &:hover .layer { opacity: 1;}
+    &:hover img { transform: scale(1.5,1.5);}
+  }
+  .two {
+    position: relative;
+    width:300px;
+    overflow: hidden;
+    grid-area: two;
+    img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0;
+      transition: all 1s;
+      .btn{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          width:100px;
+          height: 35px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color:brown;
+          color:white;
+      }
+    }
+    &:hover .layer { opacity: 1;}
+    &:hover img { transform: scale(1.5,1.5);}
+  }
+  .three {
+    position: relative;
+    width:300px;
+    overflow: hidden;
+    grid-area: three;
+    img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0;
+      transition: all 1s;
+      .btn{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          width:100px;
+          height: 35px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color:brown;
+          color:white;
+      }
+    }
+    &:hover .layer { opacity: 1;}
+    &:hover img { transform: scale(1.5,1.5);}
+  }
+  .four {
+    position: relative;
+    width:300px;
+    overflow: hidden;
+    grid-area: four;
+    img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0;
+      transition: all 1s;
+      .btn{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          width:100px;
+          height: 35px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color:brown;
+          color:white;
+      }
+    }
+    &:hover .layer { opacity: 1;}
+    &:hover img { transform: scale(1.5,1.5);}
+  }
+  .five {
+    position: relative;
+    width:300px;
+    overflow: hidden;
+    grid-area: five;
+    img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0;
+      transition: all 1s;
+      .btn{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          width:100px;
+          height: 35px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color:brown;
+          color:white;
+      }
+    }
+    &:hover .layer { opacity: 1;}
+    &:hover img { transform: scale(1.5,1.5);}
+  }
+  .six {
+    position: relative;
+    width:300px;
+    overflow: hidden;
+    grid-area: six;
+    img {
+      width: 100%;
+      transition: all 1s;
+    }
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: gray;
+      opacity: 0;
+      transition: all 1s;
+      .btn{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          width:100px;
+          height: 35px;
+          border-radius: 10px;
+          cursor: pointer;
+          background-color:brown;
+          color:white;
+      }
+    }
+    &:hover .layer { opacity: 1;}
+    &:hover img { transform: scale(1.5,1.5);}
+  }
+}
+
+}

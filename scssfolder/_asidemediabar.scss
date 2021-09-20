@@ -1,0 +1,151 @@
+// Deel - 3 
+.social-media {
+    overflow: hidden;
+  }
+  .blog {
+    background-color: #e17b77;
+    width: 350px;
+    margin-left: auto;
+    padding: 18px;
+    transform: translateX(300px);
+    transition: transform 0.7s;
+    a {
+      color: white;
+      font-size: 18px;
+    }
+    .fa-blog {
+      margin-right: 30px;
+      font-size: 20px;
+    }
+    &:hover {
+      transform: translateX(0);
+    }
+    &::before{
+      content: "\f781";
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      font-size: 20px;
+      margin-right: 50px; 
+     
+    }
+  }
+  
+  .twitter {
+    background-color: #00aced;
+    width: 350px;
+    margin-left: auto;
+    padding: 18px;
+    transform: translateX(300px);
+    transition: transform 0.7s;
+    a {
+      color: white;
+      font-size: 18px;
+    }
+    .fa-twitter {
+      margin-right: 30px;
+      font-size: 20px;
+    }
+  
+    &:hover {
+      transform: translateX(0);
+    }
+    &::before{
+      content: "\f099";
+      font-family: "Font Awesome 5 Brands"; 
+      font-weight: 900;
+      font-size: 20px;
+      margin-right: 50px; 
+     
+    }
+  }
+  
+  .linkedin {
+    background-color: #007bb6;
+    width: 350px;
+    margin-left: auto;
+    padding: 18px;
+    transform: translateX(300px);
+    transition: transform 0.7s;
+    a {
+      color: white;
+      font-size: 18px;
+    }
+    .fa-linkedin-in {
+      margin-right: 30px;
+      font-size: 20px;
+    }
+    &:hover {
+      transform: translateX(0);
+    }
+    &::before{
+      content: "\f0e1";
+      font-family: "Font Awesome 5 Brands"; 
+      font-weight: 900;
+      font-size: 20px;
+      margin-right: 50px; 
+     
+    }
+
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    width: 350px;
+    margin-left: auto;
+    padding: 18px;
+    transform: translateX(300px);
+    transition: transform 0.7s;
+    a {
+      color: white;
+      font-size: 18px;
+    }
+    .fa-facebook-f {
+      margin-right: 30px;
+      font-size: 20px;
+    }
+    &:hover {
+      transform: translateX(0);
+    }
+    &::before{
+      content: "\f39e";
+      font-family: "Font Awesome 5 Brands"; 
+      font-weight: 900;
+      font-size: 20px;
+      margin-right: 50px; 
+     
+    }
+  
+  }
+  
+  .github {
+    background-color: #333;
+    width: 350px;
+    margin-left: auto;
+    padding: 18px;
+    transform: translateX(300px);
+    transition: transform 0.7s;
+   
+    a {
+      color: white;
+      font-size: 18px;
+    }
+    
+    .fa-github {
+      margin-right: 30px;
+      font-size: 20px;
+    }
+    &:hover {
+      transform: translateX(0);
+    }
+    &::before{
+      content: "\f09b";
+      font-family: "Font Awesome 5 Brands"; 
+      font-weight: 900;
+      font-size: 20px;
+      margin-right: 50px; 
+     
+    }
+  
+    
+  }
+ 
